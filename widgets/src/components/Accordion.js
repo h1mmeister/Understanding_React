@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 
 const Accordion = ({ items }) => {
+  // destructuring the props
   // this is how we use state in functional components
   const [activeIndex, setActiveIndex] = useState(null);
 
+  // helper function
   const onTitleClick = (index) => {
     setActiveIndex(index);
     // console.log("Title clicked", index);
