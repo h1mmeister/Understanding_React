@@ -3,15 +3,15 @@ import { combineReducers } from "redux";
 const songsReducer = () => {
   return [
     {
-      title: "Tum Hi Ho",
+      title: "tum hi ho",
       duration: "5:00",
     },
     {
-      title: "Macarena",
+      title: "macarena",
       duration: "3:15",
     },
     {
-      title: "Brown Munde",
+      title: "brown munde",
       duration: "4:30",
     },
   ];
