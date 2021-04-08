@@ -4,6 +4,7 @@ import SongList from "./SongList";
 import SongDetail from "./SongDetail";
 
 const App = () => {
+  // functional component
   return (
     <div className="ui container grid">
       <div className="ui row">
