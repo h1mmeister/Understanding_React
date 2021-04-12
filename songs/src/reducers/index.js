@@ -1,5 +1,6 @@
 import { combineReducers } from "redux";
 
+// Reducer for listing the songs
 const songsReducer = () => {
   return [
     {
@@ -17,6 +18,7 @@ const songsReducer = () => {
   ];
 };
 
+// Reducer to selecting the song
 const selectedSongReducer = (selectedSong = null, action) => {
   if (action.type === "SONG_SELECTED") {
     return action.payload;
@@ -24,7 +26,8 @@ const selectedSongReducer = (selectedSong = null, action) => {
   return selectedSong;
 };
 
+// Combining reducer using combineReducers
 export default combineReducers({
-  song: songsReducer,
+  songs: songsReducer,
   selectedSong: selectedSongReducer,
 });
