@@ -5,6 +5,7 @@ import { selectSong } from "../actions";
 class SongList extends Component {
   renderList() {
     return this.props.songs.map((song) => {
+      // this will create a list of songs
       return (
         <div className="item" key={song.title}>
           <div className="right floated content">
@@ -20,12 +21,14 @@ class SongList extends Component {
       );
     });
   }
+
   render() {
     return <div className="ui divided list">{this.renderList()}</div>;
   }
 }
 
 const mapStateToProps = (state) => {
+  // this is used to get the state of the application to be used as props with the class component
   return { songs: state.songs };
 };
 
