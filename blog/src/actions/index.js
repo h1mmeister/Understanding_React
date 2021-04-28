@@ -1,5 +1,6 @@
 import jsonplaceholder from "../apis/jsonPlaceHolder";
 
+// using function to work as an action and then manually using dispatch
 export const fetchPosts = () => async (dispatch) => {
   const response = await jsonplaceholder.get("/posts");
 
