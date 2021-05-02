@@ -3,6 +3,8 @@ const postsReducer = (state = [], action) => {
   //   return action.payload;
   // }
   // return state;
+
+  // Rules of Reducers
   switch (action.type) {
     case "FETCH_POSTS":
       return action.payload;
