@@ -7,6 +7,7 @@ export const fetchPosts = () => async (dispatch) => {
   dispatch({ type: "FETCH_POSTS", payload: response.data });
 };
 
+// same for fetching the author
 export const fetchUser = (id) => async (dispatch) => {
   const response = await jsonplaceholder.get(`/users/${id}`);
 

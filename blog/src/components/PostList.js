@@ -9,6 +9,7 @@ class PostList extends React.Component {
     this.props.fetchPosts();
   }
 
+  // Building the list to show it to the screen
   renderList() {
     return this.props.posts.map((post) => {
       return (
@@ -31,6 +32,7 @@ class PostList extends React.Component {
   }
 }
 
+// As per the property defined in combineReducer
 const mapStateToProps = (state) => {
   return { posts: state.posts };
 };
